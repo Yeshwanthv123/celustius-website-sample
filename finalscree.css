@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+* {
+    box-sizing: border-box;
+}
+body.no-scroll {
+    overflow: hidden;
+}
+body.scrollable {
+    overflow: auto;
+}
+.container1{
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    width: 100%;
+    padding: 1.25vh;
+    background-color: rgb(213, 185, 144);
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    z-index: 10;
+}
+
+
+.name{
+    display:inline-block;
+    margin: 0; 
+    font-size: 20px;
+    color: #333;
+    font-family:'Space Mono', monospace;
+    font-weight: 900;
+}
+.logo{
+    width: 2.5vh;
+    height: 2.5vh;
+    margin-right: 3.125vh;
+}
+.name:hover{
+    cursor: pointer;
+}
+.container2{
+    margin-top: 80px;
+    width: 100%;
+    height:100vh;
+    display: flex;
+    background-color: rgb(230, 213, 188);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:0px;
+    margin: 0%;
+    animation: fadeInUp 1s ease-out;
+}
+.container3{
+    background-color: rgb(213, 185, 144);
+    height: 30vh;
+    width: 50vh;
+    
+}
+.boldtext{
+    font-weight:500;
+    font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 3vh;
+    margin-left: 9vh;
+    margin-top:2vh;
+}
+.lighttext{
+    font-family: 'Space Mono', monospace, 'Courier New', Courier, monospace;
+    color: rgb(92, 69, 35);
+    width:45vh;
+    font-size: 2vh;
+    margin-left: 3.5vh;
+    margin-top: 3vh;
+
+
+}
+.returntext{
+    font-family: 'Space Mono', monospace, 'Courier New', Courier, monospace;
+    color: rgb(92, 69, 35);
+    margin-left: 16.5vh;
+    margin-top: 3vh;
+    font-size: 2vh;
+
+}
+.returntext:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.nav1{
+    font-family: 'Space Mono', monospace, 'Courier New', Courier, monospace;
+    color: rgb(92, 69, 35);
+    margin-left:100vh;
+    display:flex;
+    padding-left: 31%;
+    font-size: 2vh;
+}
+.nav1:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.copyright{
+    background-color: rgb(213, 185, 144);
+    height:10vh;
+    width: 100vw;
+    margin-top: -10vh;
+
+}
+.lighttext1{
+    font-family: 'Space Mono', monospace, 'Courier New', Courier, monospace;
+    color: rgb(92, 69, 35);
+    margin-left: 77vh;
+}
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(213, 185, 144);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.loader {
+    border: 0.5vh solid #f3f3f3; 
+    border-top: 0.5vh solid #333; 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
